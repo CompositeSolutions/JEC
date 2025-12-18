@@ -110,7 +110,7 @@ main {
 .hero-wrapper {
     position: relative;
     min-height: calc(100vh - 70px);
-    background-image: url('/assets/texture.jpg');
+    background-image: url('../assets/texture.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

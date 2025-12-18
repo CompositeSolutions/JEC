@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} | {{ site.name }}</title>
     <meta name="description" content="{{ description or site.description }}">
-    <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" href="/assets/favicon-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="/assets/favicon-180x180.png">
-    <meta name="msapplication-TileImage" content="/assets/favicon-270x270.png">
+    <link rel="icon" href="{{ '/assets/favicon-32x32.png' | url }}" sizes="32x32">
+    <link rel="icon" href="{{ '/assets/favicon-192x192.png' | url }}" sizes="192x192">
+    <link rel="apple-touch-icon" href="{{ '/assets/favicon-180x180.png' | url }}">
+    <meta name="msapplication-TileImage" content="{{ '/assets/favicon-270x270.png' | url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
 </head>
 <body>
     <header class="site-header">
         <nav class="nav-container">
-            <a href="/" class="logo">
+            <a href="{{ '/' | url }}" class="logo">
                 <span class="logo-text">{{ site.name }}</span>
             </a>
             <ul class="nav-links">
                 {% for item in site.navigation %}
                     {% if not item.coming_soon %}
-                    <li><a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.name }}</a></li>
+                    <li><a href="{{ item.url | url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.name }}</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

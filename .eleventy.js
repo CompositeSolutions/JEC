@@ -10,6 +10,7 @@ module.exports = function(eleventyConfig) {
       includes: "_includes",
       data: "_data"
     },
+    pathPrefix: process.env.GITHUB_ACTIONS ? "/jec/" : "/",
     templateFormats: ["njk", "md", "html"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk"
