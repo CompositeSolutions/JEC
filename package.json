@@ -1,0 +1,25 @@
+{
+  "name": "cssi-jec",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CompositeSolutions/cssi-jec.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CompositeSolutions/cssi-jec/issues"
+  },
+  "homepage": "https://github.com/CompositeSolutions/cssi-jec#readme",
+  "description": "Composite Solutions and Services Inc. - New & Emerging Technologies",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

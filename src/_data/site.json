@@ -1,0 +1,14 @@
+{
+  "name": "CSSI",
+  "fullName": "Composite Solutions & Services, Inc.",
+  "tagline": "Connecting the World with Fastener-Free Composites",
+  "description": "Composite Solutions and Services Inc. - New and Emerging Technologies",
+  "address": "12823 Schabarum Avenue, Suite C, Irwindale, CA 91706",
+  "navigation": [
+    { "name": "Home", "url": "/", "coming_soon": true },
+    { "name": "About Us", "url": "/about/", "coming_soon": true },
+    { "name": "Awards & Recognitions", "url": "/awards/", "coming_soon": true },
+    { "name": "Video Gallery", "url": "/gallery/", "coming_soon": true },
+    { "name": "Contact", "url": "/contact/", "coming_soon": true }
+  ]
+}
